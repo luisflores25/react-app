@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+const displayCitizenDate = () => {
+  alert(window.MyPage.GetDate())
+  }
 function App() {
   return (
     <div className="App">
@@ -17,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={displayCitizenDate}>Call AWP without UI</button>
       </header>
     </div>
   );
